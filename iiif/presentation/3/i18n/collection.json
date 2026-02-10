@@ -17,27 +17,27 @@
       "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-01.json",
       "type": "Manifest",
       "label": {
-        "en": ["Coastal Atlas, Folio 1"],
-        "es": ["Atlas costero, folio 1"],
-        "none": ["coastal-atlas-folio-1"]
+        "en": ["Flag of Puerto Rico"],
+        "es": ["Bandera de Puerto Rico"],
+        "none": ["flag-puerto-rico"]
       }
     },
     {
       "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-02.json",
       "type": "Manifest",
       "label": {
-        "en": ["Botanical Sketchbook"],
-        "es": ["Cuaderno botánico"],
-        "none": ["botanical-sketchbook"]
+        "en": ["Flag of Brazil"],
+        "es": ["Bandera de Brasil"],
+        "none": ["flag-brasil"]
       }
     },
     {
       "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-03.json",
       "type": "Manifest",
       "label": {
-        "en": ["Experimental Notebook"],
-        "es": ["Cuaderno experimental"],
-        "none": ["experimental-notebook"]
+        "en": ["Flag of Canada and Québec"],
+        "es": ["Bandera de Canadá y Quebec"],
+        "none": ["flag-canada-quebec"]
       }
     }
   ]
