@@ -1,0 +1,82 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-03.json",
+  "type": "Manifest",
+  "label": {
+    "en": ["Experimental Notebook"],
+    "es": ["Cuaderno experimental"],
+    "none": ["experimental-notebook"]
+  },
+  "summary": {
+    "en": ["Notebook documenting three chemistry demonstrations prepared for a public lecture."],
+    "es": ["Cuaderno que documenta tres demostraciones de química preparadas para una conferencia pública."],
+    "none": ["chem-demo-notebook"]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": ["Author"],
+        "es": ["Autor"],
+        "none": ["author"]
+      },
+      "value": {
+        "en": ["Dr. Lin Ortega"],
+        "es": ["Dra. Lin Ortega"],
+        "none": ["lin-ortega"]
+      }
+    },
+    {
+      "label": {
+        "en": ["Experiment"],
+        "es": ["Experimento"],
+        "none": ["experiment"]
+      },
+      "value": {
+        "en": ["Prismatic light scattering"],
+        "es": ["Dispersión de luz prismática"],
+        "none": ["light-scattering"]
+      }
+    }
+  ],
+  "requiredStatement": {
+    "label": {
+      "en": ["Rights"],
+      "es": ["Derechos"],
+      "none": ["rights"]
+    },
+    "value": {
+      "en": ["Released under CC BY 4.0 by the Open Materials Library."],
+      "es": ["Publicado bajo CC BY 4.0 por la Biblioteca de Materiales Abiertos."],
+      "none": ["cc-by-4.0"]
+    }
+  },
+  "items": [
+    {
+      "id": "/iiif/presentation/3/i18n/manifest-03/canvas/p1",
+      "type": "Canvas",
+      "width": 1024,
+      "height": 1600,
+      "items": [
+        {
+          "id": "/iiif/presentation/3/i18n/manifest-03/page/p1/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "/iiif/presentation/3/i18n/manifest-03/annotation/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "/iiif/image/i18n/manifest-03/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 1024,
+                "height": 1600
+              },
+              "target": "/iiif/presentation/3/i18n/manifest-03/canvas/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

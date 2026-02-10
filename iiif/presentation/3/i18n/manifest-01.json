@@ -1,0 +1,82 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01.json",
+  "type": "Manifest",
+  "label": {
+    "en": ["Coastal Atlas, Folio 1"],
+    "es": ["Atlas costero, folio 1"],
+    "none": ["coastal-atlas-folio-1"]
+  },
+  "summary": {
+    "en": ["Copperplate engraving showing a late-18th-century coastline survey with bilingual annotations."],
+    "es": ["Grabado en huecograbado que muestra un levantamiento costero de finales del siglo XVIII con anotaciones bilingües."],
+    "none": ["fol-1 coastal survey"]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": ["Creator"],
+        "es": ["Creador"],
+        "none": ["creator"]
+      },
+      "value": {
+        "en": ["Ada Rivera"],
+        "es": ["Ada Rivera"],
+        "none": ["ada-rivera"]
+      }
+    },
+    {
+      "label": {
+        "en": ["Date"],
+        "es": ["Fecha"],
+        "none": ["date"]
+      },
+      "value": {
+        "en": ["Circa 1783"],
+        "es": ["Circa 1783"],
+        "none": ["1783"]
+      }
+    }
+  ],
+  "requiredStatement": {
+    "label": {
+      "en": ["Attribution"],
+      "es": ["Atribución"],
+      "none": ["attribution"]
+    },
+    "value": {
+      "en": ["Provided by Maritime Cartography Lab"],
+      "es": ["Proporcionado por el Laboratorio de Cartografía Marítima"],
+      "none": ["Maritime Cartography Lab"]
+    }
+  },
+  "items": [
+    {
+      "id": "/iiif/presentation/3/i18n/manifest-01/canvas/p1",
+      "type": "Canvas",
+      "width": 1500,
+      "height": 2000,
+      "items": [
+        {
+          "id": "/iiif/presentation/3/i18n/manifest-01/page/p1/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "/iiif/presentation/3/i18n/manifest-01/annotation/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "/iiif/image/i18n/manifest-01/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 1500,
+                "height": 2000
+              },
+              "target": "/iiif/presentation/3/i18n/manifest-01/canvas/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

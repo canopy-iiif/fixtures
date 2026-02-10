@@ -1,0 +1,82 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-02.json",
+  "type": "Manifest",
+  "label": {
+    "en": ["Botanical Sketchbook"],
+    "es": ["Cuaderno botánico"],
+    "none": ["botanical-sketchbook"]
+  },
+  "summary": {
+    "en": ["Watercolor studies of alpine plants accompanied by short field notes."],
+    "es": ["Estudios en acuarela de plantas alpinas acompañados de breves notas de campo."],
+    "none": ["alpine-plant-notes"]
+  },
+  "metadata": [
+    {
+      "label": {
+        "en": ["Collector"],
+        "es": ["Coleccionista"],
+        "none": ["collector"]
+      },
+      "value": {
+        "en": ["Sofia Delgado"],
+        "es": ["Sofía Delgado"],
+        "none": ["sofia-delgado"]
+      }
+    },
+    {
+      "label": {
+        "en": ["Location"],
+        "es": ["Ubicación"],
+        "none": ["location"]
+      },
+      "value": {
+        "en": ["Sierra Nevada range"],
+        "es": ["Cordillera de Sierra Nevada"],
+        "none": ["sierra-nevada"]
+      }
+    }
+  ],
+  "requiredStatement": {
+    "label": {
+      "en": ["Usage"],
+      "es": ["Uso"],
+      "none": ["usage"]
+    },
+    "value": {
+      "en": ["Available for non-commercial research with credit to the Delgado family."],
+      "es": ["Disponible para investigación no comercial con crédito a la familia Delgado."],
+      "none": ["credit-delgado-family"]
+    }
+  },
+  "items": [
+    {
+      "id": "/iiif/presentation/3/i18n/manifest-02/canvas/p1",
+      "type": "Canvas",
+      "width": 1200,
+      "height": 900,
+      "items": [
+        {
+          "id": "/iiif/presentation/3/i18n/manifest-02/page/p1/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "/iiif/presentation/3/i18n/manifest-02/annotation/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "/iiif/image/i18n/manifest-02/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 1200,
+                "height": 900
+              },
+              "target": "/iiif/presentation/3/i18n/manifest-02/canvas/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
