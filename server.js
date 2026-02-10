@@ -4,7 +4,7 @@ const path = require('path');
 
 const PORT = Number(process.env.PORT || 5002);
 const PUBLIC_BASE_URL = normalizeBase(process.env.PUBLIC_BASE_URL || `http://localhost:${PORT}`);
-const SOURCE_BASE_URL = normalizeBase(process.env.SOURCE_BASE_URL || 'https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main');
+const SOURCE_BASE_URL = normalizeBase(process.env.SOURCE_BASE_URL || 'https://canopy-iiif.github.io/fixtures');
 const ROOT_DIR = process.cwd();
 
 const app = express();

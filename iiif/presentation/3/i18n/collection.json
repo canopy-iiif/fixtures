@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/collection.json",
+  "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/collection.json",
   "type": "Collection",
   "label": {
     "en": ["Multilingual Demo Collection"],
@@ -14,7 +14,7 @@
   },
   "items": [
     {
-      "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01.json",
+      "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-01.json",
       "type": "Manifest",
       "label": {
         "en": ["Coastal Atlas, Folio 1"],
@@ -23,7 +23,7 @@
       }
     },
     {
-      "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-02.json",
+      "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-02.json",
       "type": "Manifest",
       "label": {
         "en": ["Botanical Sketchbook"],
@@ -32,7 +32,7 @@
       }
     },
     {
-      "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-03.json",
+      "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-03.json",
       "type": "Manifest",
       "label": {
         "en": ["Experimental Notebook"],

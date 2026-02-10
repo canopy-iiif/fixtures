@@ -17,12 +17,12 @@ This directory contains static fixtures that can be published directly to GitHub
 3. Override behavior with environment variables:
    - `PORT` — change the listening port.
    - `PUBLIC_BASE_URL` — set the ID base emitted to clients (defaults to `http://localhost:<PORT>`).
-   - `SOURCE_BASE_URL` — base to replace (defaults to `https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main`).
+   - `SOURCE_BASE_URL` — base to replace (defaults to `https://canopy-iiif.github.io/fixtures`).
 4. Visit `http://localhost:5002/iiif/presentation/3/i18n/collection.json` (or use `curl`) to inspect rewritten responses. Static assets (e.g., `/assets`) are served directly.
 5. Stop the server with `Ctrl+C` when finished. When adding fixtures, test both Presentation and Image requests locally to guarantee relative URLs resolve through the Node server.
 
 ### ID rebasing expectations
-- JSON checked into git should use the GitHub Pages base (e.g., `https://raw.githubusercontent.com/...`) for **every** `id` (collections, manifests, canvases, annotation pages, annotations, and Image API services/assets).
+- JSON checked into git should use the GitHub Pages base (e.g., `https://canopy-iiif.github.io/fixtures/...`) for **every** `id` (collections, manifests, canvases, annotation pages, annotations, and Image API services/assets).
 - The local server automatically rebases these `id` values so manifests/collections remain valid when accessed at `http://localhost:5002`.
 - If you generate JSON with relative IDs during development, normalize them to the GitHub base before committing so Pages and the local server stay in sync.
 

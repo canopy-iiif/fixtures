@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01.json",
+  "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-01.json",
   "type": "Manifest",
   "label": {
     "en": ["Flag of Puerto Rico"],
@@ -76,27 +76,27 @@
   },
   "items": [
     {
-      "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01/canvas/p1",
+      "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-01/canvas/p1",
       "type": "Canvas",
       "width": 2496,
       "height": 1664,
       "items": [
         {
-          "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01/page/p1/1",
+          "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-01/page/p1/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01/annotation/p1-image",
+              "id": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-01/annotation/p1-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/assets/i18n/puerto_rico.jpg",
+                "id": "https://canopy-iiif.github.io/fixtures/assets/i18n/puerto_rico.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "width": 2496,
                 "height": 1664
               },
-              "target": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01/canvas/p1"
+              "target": "https://canopy-iiif.github.io/fixtures/iiif/presentation/3/i18n/manifest-01/canvas/p1"
             }
           ]
         }
