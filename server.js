@@ -8,14 +8,16 @@ const SOURCE_BASE_URL = normalizeBase(process.env.SOURCE_BASE_URL || 'https://ra
 const ROOT_DIR = process.cwd();
 
 const app = express();
+const IIIF_JSON_ROUTE = /^\/iiif\/(presentation|image)\/.*\.json$/;
 
-app.get(/\/iiif\/presentation\/.*\.json$/, async (req, res, next) => {
+app.get(IIIF_JSON_ROUTE, async (req, res, next) => {
   try {
     const filePath = secureJoin(ROOT_DIR, req.path);
     const raw = await fs.readFile(filePath, 'utf8');
     const data = JSON.parse(raw);
     rewriteIds(data);
-    res.setHeader('Content-Type', 'application/ld+json;profile="http://iiif.io/api/presentation/3/context.json"');
+    const apiType = req.path.match(IIIF_JSON_ROUTE)?.[1] || 'presentation';
+    res.setHeader('Content-Type', contentTypeFor(apiType));
     res.setHeader('Cache-Control', 'no-store');
     res.send(JSON.stringify(data, null, 2));
   } catch (error) {
@@ -82,4 +84,11 @@ function secureJoin(root, requestPath) {
 
 function normalizeBase(url) {
   return url.endsWith('/') ? url.slice(0, -1) : url;
+}
+
+function contentTypeFor(apiType) {
+  if (apiType === 'image') {
+    return 'application/ld+json;profile="http://iiif.io/api/image/3/context.json"';
+  }
+  return 'application/ld+json;profile="http://iiif.io/api/presentation/3/context.json"';
 }

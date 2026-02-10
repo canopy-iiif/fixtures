@@ -3,26 +3,38 @@
   "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01.json",
   "type": "Manifest",
   "label": {
-    "en": ["Coastal Atlas, Folio 1"],
-    "es": ["Atlas costero, folio 1"],
-    "none": ["coastal-atlas-folio-1"]
+    "en": ["Flag of Puerto Rico"],
+    "es": ["Bandera de Puerto Rico"],
+    "none": ["flag-puerto-rico"]
   },
   "summary": {
-    "en": ["Copperplate engraving showing a late-18th-century coastline survey with bilingual annotations."],
-    "es": ["Grabado en huecograbado que muestra un levantamiento costero de finales del siglo XVIII con anotaciones bilingües."],
-    "none": ["fol-1 coastal survey"]
+    "en": ["Five red and white stripes with a hoist-side blue triangle and lone white star."],
+    "es": ["Cinco franjas rojas y blancas con un triángulo azul en el asta y una estrella blanca."],
+    "none": ["flag-summary-puerto-rico"]
   },
   "metadata": [
     {
       "label": {
-        "en": ["Creator"],
-        "es": ["Creador"],
-        "none": ["creator"]
+        "en": ["Colors"],
+        "es": ["Colores"],
+        "none": ["colors"]
       },
       "value": {
-        "en": ["Ada Rivera"],
-        "es": ["Ada Rivera"],
-        "none": ["ada-rivera"]
+        "en": ["Cherry red stripes, white stripes, cobalt triangle, white star."],
+        "es": ["Franjas rojo cereza, franjas blancas, triángulo cobalto, estrella blanca."],
+        "none": ["red-white-blue"]
+      }
+    },
+    {
+      "label": {
+        "en": ["Entity"],
+        "es": ["Entidad"],
+        "none": ["entity"]
+      },
+      "value": {
+        "en": ["Unincorporated territory of the United States."],
+        "es": ["Territorio no incorporado de Estados Unidos."],
+        "none": ["territory"]
       }
     },
     {
@@ -32,47 +44,59 @@
         "none": ["date"]
       },
       "value": {
-        "en": ["Circa 1783"],
-        "es": ["Circa 1783"],
-        "none": ["1783"]
+        "en": ["2023"],
+        "es": ["2023"],
+        "none": ["2023"]
+      }
+    },
+    {
+      "label": {
+        "en": ["Type"],
+        "es": ["Tipo"],
+        "none": ["type"]
+      },
+      "value": {
+        "en": ["Flag"],
+        "es": ["Bandera"],
+        "none": ["flag"]
       }
     }
   ],
   "requiredStatement": {
     "label": {
-      "en": ["Attribution"],
-      "es": ["Atribución"],
-      "none": ["attribution"]
+      "en": ["Usage"],
+      "es": ["Uso"],
+      "none": ["usage"]
     },
     "value": {
-      "en": ["Provided by Maritime Cartography Lab"],
-      "es": ["Proporcionado por el Laboratorio de Cartografía Marítima"],
-      "none": ["Maritime Cartography Lab"]
+      "en": ["Fixture-only artwork created for multilingual tests; colors based on the Puerto Rican flag."],
+      "es": ["Arte solo para pruebas multilingües; colores basados en la bandera de Puerto Rico."],
+      "none": ["fixture-art-puerto-rico"]
     }
   },
   "items": [
     {
-      "id": "/iiif/presentation/3/i18n/manifest-01/canvas/p1",
+      "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01/canvas/p1",
       "type": "Canvas",
-      "width": 1500,
-      "height": 2000,
+      "width": 2496,
+      "height": 1664,
       "items": [
         {
-          "id": "/iiif/presentation/3/i18n/manifest-01/page/p1/1",
+          "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01/page/p1/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "/iiif/presentation/3/i18n/manifest-01/annotation/p1-image",
+              "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01/annotation/p1-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "/iiif/image/i18n/manifest-01/full/full/0/default.jpg",
+                "id": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/assets/i18n/puerto_rico.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "width": 1500,
-                "height": 2000
+                "width": 2496,
+                "height": 1664
               },
-              "target": "/iiif/presentation/3/i18n/manifest-01/canvas/p1"
+              "target": "https://raw.githubusercontent.com/canopy-iiif/fixtures/refs/heads/main/iiif/presentation/3/i18n/manifest-01/canvas/p1"
             }
           ]
         }

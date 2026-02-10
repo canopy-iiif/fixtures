@@ -6,8 +6,10 @@ This directory contains static fixtures that can be published directly to GitHub
 - `iiif/` — canonical IIIF responses and assets. Within this folder, keep the IIIF spec in mind:
   - `presentation/` holds JSON-LD manifests, collections, and other Presentation API payloads.
     - `presentation/3/` is explicitly scoped to the IIIF Presentation API **3.0** spec, so manifests and collections here must follow 3.0 contexts, structures, and property names.
-  - `image/` holds level 0 IIIF Image API responses plus the referenced image assets (PNG/JPG). Subfolders should mirror the URL pattern `/{identifier}/{info.json|full/full/0/default.jpg}` so static hosting works.
+  - `image/` holds level 0 IIIF Image API responses plus the referenced image assets (PNG/JPG).
+    - `image/3/` is reserved for IIIF Image API **3.0** services. Each identifier should expose `info.json` alongside the rendered file at `full/full/0/default.jpg` (or other canonical qualities) so static hosting works.
 - `assets/` — any non-IIIF media that must be served next to the fixtures (e.g., thumbnails, docs, supplemental JSON). Prefer keeping raw binaries small (<1 MB) so the repo stays light.
+    - `assets/i18n/` currently stores raw JPEG flag illustrations that the multilingual manifests reference directly instead of the IIIF Image API.
 
 ## Serving locally
 1. Install dependencies once with `npm install` (installs `express`).
@@ -20,9 +22,9 @@ This directory contains static fixtures that can be published directly to GitHub
 5. Stop the server with `Ctrl+C` when finished. When adding fixtures, test both Presentation and Image requests locally to guarantee relative URLs resolve through the Node server.
 
 ### ID rebasing expectations
-- JSON checked into git should use the GitHub Pages base (e.g., `https://raw.githubusercontent.com/...`).
+- JSON checked into git should use the GitHub Pages base (e.g., `https://raw.githubusercontent.com/...`) for **every** `id` (collections, manifests, canvases, annotation pages, annotations, and Image API services/assets).
 - The local server automatically rebases these `id` values so manifests/collections remain valid when accessed at `http://localhost:5002`.
-- If you introduce new directories, prefer relative IDs (`/iiif/...`) inside the files; the server will expand them according to the base URLs above.
+- If you generate JSON with relative IDs during development, normalize them to the GitHub base before committing so Pages and the local server stay in sync.
 
 ## Publishing to GitHub Pages
 - Pages will serve the repository contents verbatim, so keep paths stable and reference files with relative URLs.
